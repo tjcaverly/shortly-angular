@@ -1,4 +1,5 @@
 angular.module('shortly', [
+  'ngAnimate',
   'shortly.services',
   'shortly.links',
   'shortly.shorten',
