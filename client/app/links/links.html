@@ -1,8 +1,10 @@
 <div id='container'>
   <!-- Your html here -->
   <ul>
-  	<!-- <li ng-repeat='link in data'>{{ link.title }}<br>{{ link.url }}</li> -->
+  	<li ng-repeat='link in data.links'>url: <a href={{link.url}}>{{link.url}}</a> shortened: <a href="{{link.base_url + '/api/links/' + link.code}}">  {{link.code}} </a> visited: {{link.visits}}</li>
   </ul>
+
+  <a href="#/shorten">Add a new link</a>
 </div>
 <!--
  visits: Number,
