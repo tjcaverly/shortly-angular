@@ -5,7 +5,7 @@
   	<li ng-repeat='link in data.links | orderBy:"-visits" | filter:searchText' class='animate'>url: <a href={{link.url}}>{{link.url}}</a> shortened: <a href="{{link.base_url + '/api/links/' + link.code}}">  {{link.code}} </a> visited: {{link.visits}}</li>
   </ul>
 
-  <a href="#/shorten">Add a new link</a>
+  <a href="#/shorten">>> Add a new link</a>
 </div>
 <!--
  visits: Number,
