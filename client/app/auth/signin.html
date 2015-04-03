@@ -1,7 +1,7 @@
-<div id='signin'>
+<div id='signin' class='container'>
   <h1>signin</h1>
   <form name="signinForm" ng-submit='signin()' novalidate>
-    username: <input type='text' name='username' ng-model='user.username' required>
+    username: <input class='urlInput' type='text' name='username' ng-model='user.username' required>
     <div>
     	<div ng-show="signinForm.username.$error.required">Enter your username</div>
     </div>

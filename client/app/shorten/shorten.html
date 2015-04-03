@@ -2,7 +2,8 @@
   <form novalidate class="simple-form">
     URL: <input class="urlInput" type="url" ng-model="link" required/>
     <input class="urlSubmit" type="submit" ng-click="addLink(link)" value="Submit" />
-  </form><br>
+  </form>
+  <div ng-show="failed">Unable to add.</div>
   <a href="#/links">>> View links</a>
 </div>
 
